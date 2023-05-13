@@ -362,6 +362,13 @@ body {
   min-height: 312px;
   background-color: #2e2f42;
 }
+.wrapper-footer {
+  margin-right: 120px;
+}
+.footer-container {
+  display: flex;
+  align-items: flex-start;
+}
 .logo-footer {
   display: inline-block;
   margin-bottom: 16px;
@@ -397,12 +404,9 @@ body {
   color: #f4f4fd;
   margin-top: 16px;
 }
-.footer-container {
-  padding-top: 100px;
-}
+
 .footer-icons {
   display: flex;
-  justify-content: flex-end;
 }
 .footer-icon {
   display: flex;
@@ -427,7 +431,6 @@ body {
   /* WHITE */
 
   color: #ffffff;
-  margin-right: 124px;
 }
 .footer-icon-list {
   height: 24px;
