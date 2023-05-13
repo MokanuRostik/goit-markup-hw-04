@@ -322,6 +322,7 @@ body {
   height: 16px;
   width: 16px;
   padding: 12px;
+  fill: #f4f4fd;
 }
 .list-wrapper-icons {
   display: flex;
