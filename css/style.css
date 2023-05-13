@@ -50,6 +50,8 @@ body {
   /* CORNFLOWER */
 
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .header-container {
   display: flex;
@@ -284,7 +286,7 @@ body {
 }
 .wrapper {
   background-color: #ffffff;
-  padding: 32px 16px;
+  padding: 32px 0;
 }
 .wrapper_icons {
   display: flex;
@@ -300,6 +302,21 @@ body {
   margin-top: 8px;
   margin-bottom: 32px;
 }
+.li-icon-link {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.li-icon-link:hover {
+  background-color: #404bbf;
+}
+.li-icon-link:focus {
+  background-color: #404bbf;
+}
 .li-icon-svg {
   display: flex;
   height: 16px;
@@ -309,6 +326,7 @@ body {
 .list-wrapper-icons {
   display: flex;
   justify-content: center;
+  gap: 24px;
 }
 .list-title {
   padding-top: 32px;
@@ -361,6 +379,7 @@ body {
 }
 .list-team {
   display: flex;
+
   flex-direction: row;
   margin-top: 72px;
   gap: 24px;
