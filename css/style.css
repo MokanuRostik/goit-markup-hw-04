@@ -18,6 +18,19 @@ ol {
   padding-left: 0;
   list-style: none;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 img {
   display: block;
 }
@@ -45,10 +58,6 @@ body {
 
 /* ///////////////header///////////////////////////// */
 .top-header {
-  height: 72px;
-  background: #ffffff;
-  /* CORNFLOWER */
-
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -59,11 +68,6 @@ body {
 
 .header-navigation {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-
-  padding: 0px;
-  gap: 40px;
 }
 .header-list-nav {
   display: flex;
@@ -80,9 +84,9 @@ body {
 }
 .address {
   display: flex;
-  justify-content: flex-end;
-  margin-left: 332px;
-  gap: 40px;
+
+  margin-left: auto;
+  font-style: normal;
 }
 .logo {
   padding-top: 25px;
@@ -136,7 +140,7 @@ body {
 /* /////////heroo////////// */
 .hero {
   background-color: #2e2f42;
-  min-height: 600px;
+  text-align: center;
   max-width: 1440px;
   padding: 188px 0;
   background-image: linear-gradient(
@@ -150,9 +154,7 @@ body {
   background-image: rgba(46, 47, 66, 0.7);
 }
 .main-title {
-  top: 260px;
-  left: 472px;
-
+  margin: 0 auto;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -169,11 +171,11 @@ body {
 .main-button {
   display: block;
   padding: 16px 32px;
-  gap: 10px;
+
   min-width: 169px;
 
   height: 56px;
-  left: 636px;
+  margin: 0 auto;
   margin-top: 48px;
   border: none;
   border-radius: 4px;
@@ -207,15 +209,12 @@ body {
 }
 .list-advantages {
   display: flex;
-  flex-direction: row;
 
-  height: 104px;
-  padding-top: 120px;
   padding-bottom: 120px;
   gap: 24px;
 }
 .list-menu {
-  width: calc((100% - 72px) / 4);
+  width: 264px;
 }
 
 .icon {
@@ -238,12 +237,8 @@ body {
   padding-bottom: 120px;
 }
 .list-work {
-  flex-direction: row;
-  margin-top: 72px;
 }
-.container-work {
-  padding-top: 120px;
-}
+
 .work-title {
   margin-bottom: 72px;
   font-family: "Roboto";
@@ -263,12 +258,12 @@ body {
 }
 .list-work {
   display: flex;
-  flex-direction: row;
+
   margin-top: 72px;
   gap: 24px;
 }
 .work-li {
-  width: calc((100% - 48px) / 3);
+  width: 360px;
   margin-top: 72px;
   margin-bottom: 120px;
 }
@@ -276,9 +271,8 @@ body {
 /* /////////////////////////////////////team//////////////////////////////////// */
 
 .team {
-  height: 732px;
   background-color: #f4f4fd;
-  margin-top: 120px;
+
   padding: 120px 0;
 }
 .our-team {
@@ -330,7 +324,6 @@ body {
   gap: 24px;
 }
 .list-title {
-  padding-top: 32px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -338,7 +331,6 @@ body {
   line-height: 24px;
   /* identical to box height, or 120% */
 
-  text-align: center;
   letter-spacing: 0.02em;
 
   /* NAVY BLUE */
@@ -354,7 +346,6 @@ body {
   line-height: 24px;
   /* identical to box height, or 150% */
 
-  text-align: center;
   letter-spacing: 0.02em;
 
   /* SLATE */
@@ -376,13 +367,10 @@ body {
   /* NAVY BLUE */
 
   color: #2e2f42;
-  padding-top: 120px;
 }
 .list-team {
   display: flex;
 
-  flex-direction: row;
-  margin-top: 72px;
   gap: 24px;
 }
 .team-li {
@@ -398,6 +386,7 @@ body {
   padding-bottom: 120px;
 }
 .customers-title {
+  text-align: center;
   font-size: 36px;
   line-height: 1.1;
   color: #2e2f42;
