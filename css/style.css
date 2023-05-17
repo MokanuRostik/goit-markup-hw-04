@@ -18,6 +18,9 @@ ol {
   padding-left: 0;
   list-style: none;
 }
+a {
+  list-style: none;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -129,14 +132,22 @@ body {
 .link-address-tel {
   color: #434455;
 }
+.link-address-tel:hover {
+  color: #404bbf;
+}
 .link-address {
   color: #434455;
+}
+.link-address:hover {
+  color: #404bbf;
 }
 .link-header {
   color: #2e2f42;
   padding: 24px 0;
 }
-
+.link-header:hover {
+  color: #404bbf;
+}
 /* /////////heroo////////// */
 .hero {
   background-color: #2e2f42;
@@ -196,7 +207,10 @@ body {
 
   color: #ffffff;
 }
-
+.main-button:hover {
+  background: #404bbf;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
 /* //////advantages/////// */
 .advantages {
   padding: 120px 0;
@@ -275,6 +289,7 @@ body {
 }
 .our-team {
   margin-bottom: 72px;
+  padding-top: 120px;
 }
 .wrapper {
   background-color: #ffffff;
@@ -328,6 +343,7 @@ body {
   font-size: 20px;
   text-align: center;
   letter-spacing: 0.02em;
+  line-height: 24px;
 
   /* NAVY BLUE */
 
@@ -339,6 +355,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
+  line-height: 24px;
 
   /* identical to box height, or 150% */
 
@@ -370,7 +387,7 @@ body {
   gap: 24px;
 }
 .team-li {
-  width: calc((100% - 72px) / 4);
+  width: 264px;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -433,7 +450,7 @@ body {
 }
 .logo-footer {
   display: inline-block;
-  margin-bottom: 16px;
+
   font-family: "Raleway";
   font-style: normal;
   font-weight: 800;
@@ -597,7 +614,7 @@ body {
   row-gap: 48px;
 }
 .link-partfolio {
-  width: calc((100% - 48px) / 3);
+  width: 360px;
 }
 .link-partfolio:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
